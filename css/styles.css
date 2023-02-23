@@ -22,6 +22,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
@@ -71,7 +73,7 @@ body {
   outline: none;
   white-space: nowrap;
 }
-/*--header--*/
+/*===================Header===================*/
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -136,9 +138,9 @@ body {
 .contact-phone-link:focus {
   color: var(--accent-color);
 }
-/*--/header--*/
+/*===================/Header===================*/
 
-/*--hero sectional--*/
+/*===================Hero sectional===================*/
 .hero-sectional {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -147,19 +149,18 @@ body {
 }
 .hero-title {
   max-width: 494px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   color: #ffffff;
 }
 .hero-btn {
-  margin-top: 48px;
   padding: 16px 32px;
   font-family: inherit;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -171,9 +172,9 @@ border-radius: 4px;
 .hero-btn:focus {
   background-color: #404bbf;
 }
-/*--/hero sectional--*/
+/*===================/Hero sectional===================*/
 
-/*--Advantage--*/
+/*===================Advantage===================*/
 .advantage-list {
   display: flex;
   justify-content: space-between;
@@ -187,8 +188,9 @@ border-radius: 4px;
   font-size: 20px;
   line-height: 1.2;
 }
-/*--/Advantage--*/
-/*--Gallery--*/
+/*===================/Advantage===================*/
+
+/*===================Gallery===================*/
 .gallery {
   padding-bottom: 120px;
 }
@@ -196,9 +198,9 @@ border-radius: 4px;
   display: flex;
   justify-content: space-between;
 }
-/*--/Gallery--*/
+/*===================/Gallery===================*/
 
-/*--Our team--*/
+/*===================Our team===================*/
 .team {
   background-color: #f4f4fd;
 }
@@ -228,28 +230,35 @@ border-radius: 4px;
   line-height: 1.11;
   text-transform: capitalize;
 }
-/*--footer--*/
+/*===================Footer===================*/
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #2e2f42;
 }
 .footer-logo-link {
+  display: block;
+  margin-bottom: 16px;
   font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
 }
 .footer-text {
   max-width: 264px;
-  margin-top: 16px;
   color: #e7e9fc;
 }
-/*--/footer--*/
+/*===================/footer===================*/
+
+/*===================Portfolio===================*/
 
 .btn-item {
   padding: 12px 24px;
-  border: 1px solid #E7E9FC;
-border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   background-color: #f4f4fd;
   font-family: inherit;
   font-weight: 500;
@@ -263,20 +272,21 @@ border-radius: 4px;
 .btn-item:focus {
   background-color: #404bbf;
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-  }
-  .btn-list-item:not(:last-child){
-    margin-right: 24px;
-  }
+  border-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-list-item:not(:last-child) {
+  margin-right: 24px;
+}
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 .btn-list {
   display: flex;
- justify-content: center;
- margin-bottom: 72px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -285,13 +295,15 @@ border-radius: 4px;
   gap: 48px 24px;
 }
 .portfolio-link {
-  flex-basis: calc((100% - 48px) / 3)
+  display: block;
   color: #2e2f42;
 }
-.portfolio-card{
-  padding-top: 32px;
-  padding-bottom: 23px;
-  padding-left: 16px;
-  border: 1px solid #E7E9FC;
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
+/*===================/Portfolio===================*/
